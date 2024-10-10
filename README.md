@@ -61,6 +61,4 @@ This project uses the following open-source libraries:
 
 ## Contributing
 
-We welcome contributions to HanziHelper! Please feel free to submit pull requests or open issues on our GitHub repository.
-
-[https://github.com/walleWorks/HanziHelper]
+We welcome contributions to HanziHelper! Please feel free to submit pull requests or open issues on  [our GitHub repository](https://github.com/walleWorks/HanziHelper).
