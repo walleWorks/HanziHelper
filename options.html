@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">__MSG_settings__</title>
+  <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+<body>
+  <div id="options-container">
+    <h1>__MSG_settings__</h1>
+    <div class="tab">
+      <button class="tablinks active" data-tab="BasicSettings" data-i18n="basicSettings">__MSG_basicSettings__</button>
+      <button class="tablinks" data-tab="About" data-i18n="about">__MSG_about__</button>
+    </div>
+
+    <div id="BasicSettings" class="tabcontent">
+      <h2 data-i18n="voiceSettings">__MSG_voiceSettings__</h2>
+      <div class="setting-group">
+        <label for="chinese-voice-selector" data-i18n="chineseVoice">__MSG_chineseVoice__:</label>
+        <select id="chinese-voice-selector"></select>
+      </div>
+      <div class="setting-group">
+        <label for="english-voice-selector" data-i18n="englishVoice">__MSG_englishVoice__:</label>
+        <select id="english-voice-selector"></select>
+      </div>
+      <div class="setting-group">
+        <label for="rate" data-i18n="speechRate">__MSG_speechRate__: <span id="rate-value">1</span></label>
+        <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+      </div>
+      <div class="setting-group">
+        <label for="pitch" data-i18n="speechPitch">__MSG_speechPitch__: <span id="pitch-value">1</span></label>
+        <input type="range" id="pitch" min="0.5" max="2" step="0.1" value="1">
+      </div>
+      <!-- 删除了启用扩展的开关 -->
+      <button id="save" data-i18n="saveSettings">__MSG_saveSettings__</button>
+      <div id="status"></div>
+    </div>
+
+    <div id="About" class="tabcontent">
+      <h2 data-i18n="aboutHanziHelper">__MSG_aboutHanziHelper__</h2>
+      <!-- <p data-i18n="version">__MSG_version__</span>: 1.0.0</p> -->
+      <p data-i18n="latestVersion">__MSG_latestVersion__</p>
+      <h3 data-i18n="feedback">__MSG_feedback__</h3>
+      <p data-i18n="feedbackInstruction">__MSG_feedbackInstruction__</p>
+      <ul>
+        <li><span data-i18n="email">__MSG_email__</span>: <a href="mailto:jhhuawei@gmail.com">jhhuawei@gmail.com</a></li>
+        <li><span data-i18n="telegram">__MSG_telegram__</span>: <a href="https://t.me/haogeworld" target="_blank">t.me/haogeworld</a></li>
+      </ul>
+      <h3 data-i18n="privacyPolicy">__MSG_privacyPolicy__</h3>
+      <p data-i18n="privacyPolicyContent">__MSG_privacyPolicyContent__</p>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+.char-info-popup {
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.char-info-popup h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.char-info-popup p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.char-info-popup strong {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+
+#voice-selector-container {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#voice-selector {
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+#tts-controls-container {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#tts-controls-container > * {
+  margin-bottom: 10px;
+}
+
+#tts-controls-container select,
+#tts-controls-container input[type="range"],
+#tts-controls-container button {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+#tts-controls-container button {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+#tts-controls-container button:hover {
+  background-color: #e0e0e0;
+}
+
+#stop-speaking {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#stop-speaking:hover {
+  background-color: #e0e0e0;
+}
+
+.speaker-icon {
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.speaker-icon:hover {
+  opacity: 0.7;
+}
+
+#popup-content {
+  position: relative;
+  width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 200px; /* 根据需要调整 */
+}
+
+#character-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#character-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+#character-info {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#character-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+#character-info p {
+  margin: 5px 0;
+  color: #666;
+}
+
+#character-info strong {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+#character-animation {
+  margin-top: 10px;
+}
+
+/* 在文件末尾添加以下样式 */
+.settings-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.settings-button:hover {
+  transform: scale(1.1);
+}
+
+.settings-button svg {
+  width: 20px;
+  height: 20px;
+  fill: #4CAF50; /* 使用与您的主题相匹配的颜色 */
+}
+
+/* 确保popup-content有相对定位，以便设置按钮可以正确定位 */
+#popup-content {
+  position: relative;
+  min-height: 200px; /* 根据需要调整 */
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: transparent; /* 将背景改为透明 */
+  border-bottom: none; /* 移除底部边框 */
+}
+
+.about-settings {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #888;
+  font-size: 12px;
+  transition: opacity 0.2s ease;
+  background-color: transparent; /* 确保背景透明 */
+  padding: 3px 5px; /* 添加一些内边距，以便于点击 */
+  border-radius: 3px; /* 添加圆角 */
+}
+
+.about-settings:hover {
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.05); /* 悬停时添加轻微的背景色 */
+}
+
+.about-settings svg {
+  width: 16px;
+  height: 16px;
+  margin: 0 3px;
+  fill: #888;
+}
+
+.about-feedback {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #4CAF50;
+  font-size: 14px;
+}
+
+.about-feedback:hover {
+  text-decoration: underline;
+}
+
+/* 将"关于-反馈"链接定位到右上角 */
+.about-settings {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* 其他样式保持不变 */

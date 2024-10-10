@@ -1,0 +1,91 @@
+{
+    "extName": {
+      "message": "HanziHelper",
+      "description": "Your personal hanzi assistant,Shows hanzi pinyin,strokes,strok animation,and English for selected Chinese character."
+    },
+    "extDescription": {
+      "message": "Your personal hanzi assistant,Shows hanzi pinyin,strokes,strok animation,and English for selected Chinese character.",
+      "description": "Your personal Chinese character assistant,Shows hanzi pinyin, strokes,strok animation,and English for selected Chinese character."
+    },
+    "pinyin": {
+      "message": "Pinyin"
+    },
+    "strokes": {
+      "message": "Strokes"
+    },
+    "radicals": {
+      "message": "Radicals"
+    },
+    "english": {
+      "message": "English"
+    },
+    "inputPlaceholder": {
+      "message": "Enter a Chinese character and press Enter"
+    },
+    "invalidCharacter": {
+      "message": "Please enter a valid Chinese character"
+    },
+    "aboutSettings": {
+      "message": "About - Feedback"
+    },
+    "settings": {
+      "message": "Settings"
+    },
+    "chineseVoice": {
+      "message": "Chinese Voice"
+    },
+    "englishVoice": {
+      "message": "English Voice"
+    },
+    "speechRate": {
+      "message": "Speech Rate"
+    },
+    "speechPitch": {
+      "message": "Speech Pitch"
+    },
+    "saveSettings": {
+      "message": "Save Settings"
+    },
+    "aboutHanziHelper": {
+      "message": "HanziHelper"
+    },
+    "enableExtension": {
+      "message": "Enable Extension"
+    },
+    "basicSettings": {
+      "message": "Basic Settings"
+    },
+    "about": {
+      "message": "About"
+    },
+    "voiceSettings": {
+      "message": "Voice Settings"
+    },
+    "version": {
+      "message": "Version"
+    },
+    "latestVersion": {
+      "message": "This extension is up to date."
+    },
+    "feedback": {
+      "message": "Feedback"
+    },
+    "feedbackInstruction": {
+      "message": "If you have any questions or suggestions, please contact us:"
+    },
+    "email": {
+      "message": "Email"
+    },
+    "github": {
+      "message": "GitHub"
+    },
+    "telegram": {
+        "message": "Telegram"
+    },
+    "privacyPolicy": {
+      "message": "Privacy Policy"
+    },
+    "privacyPolicyContent": {
+      "message": "We respect your privacy and will not collect any personal information. This extension does not collect, use or share any user data. The Chinese Character Assistant extension does not collect, store or transmit any personal user data. All Chinese character analysis and information display are performed locally on the user's browser and do not involve any external servers or third parties. We respect user privacy and ensure that users can use our extension safely and privately."
+    }
+  }

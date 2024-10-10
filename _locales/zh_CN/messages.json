@@ -1,0 +1,91 @@
+{
+    "extName": {
+      "message": "汉字助手",
+      "description": "个人汉字助手，帮助小朋友轻松学习汉字，选到一个字就显示这个字的拼音、笔画、笔画动画以及英文翻译。"
+    },
+    "extDescription": {
+      "message": "轻松学习汉字，个人汉字助手，帮助小朋友轻松学习汉字，选到一个字就显示这个字的拼音、笔画、笔画动画以及英文翻译。",
+      "description": "不知道字的笔画顺序？点击汉字助手，输入字，直接查询字的笔顺，还能听到拼音和英文翻译。"
+    },
+    "pinyin": {
+      "message": "拼音"
+    },
+    "strokes": {
+      "message": "笔画"
+    },
+    "radicals": {
+      "message": "部首"
+    },
+    "english": {
+      "message": "英文"
+    },
+    "inputPlaceholder": {
+      "message": "输入汉字后回车查询"
+    },
+    "invalidCharacter": {
+      "message": "请输入一个有效的汉字"
+    },
+    "aboutSettings": {
+      "message": "关于-反馈"
+    },
+    "settings": {
+      "message": "设置"
+    },
+    "chineseVoice": {
+      "message": "中文语音"
+    },
+    "englishVoice": {
+      "message": "英文语音"
+    },
+    "speechRate": {
+      "message": "语速"
+    },
+    "speechPitch": {
+      "message": "音调"
+    },
+    "saveSettings": {
+      "message": "保存设置"
+    },
+    "aboutHanziHelper": {
+      "message": "汉字助手"
+    },
+    "enableExtension": {
+      "message": "启用扩展"
+    },
+    "basicSettings": {
+      "message": "基本设置"
+    },
+    "about": {
+      "message": "关于"
+    },
+    "voiceSettings": {
+      "message": "语音设置"
+    },
+    "version": {
+      "message": "版本"
+    },
+    "latestVersion": {
+      "message": "当前扩展已是最新版本。"
+    },
+    "feedback": {
+      "message": "反馈"
+    },
+    "feedbackInstruction": {
+      "message": "如果您有任何问题或建议，请联系我们："
+    },
+    "email": {
+      "message": "电子邮件"
+    },
+    "github": {
+      "message": "GitHub"
+    },
+    "telegram": {
+        "message": "电报"
+    },
+    "privacyPolicy": {
+      "message": "隐私政策"
+    },
+    "privacyPolicyContent": {
+      "message": "我们尊重您的隐私，不会收集任何个人信息。本扩展程序不收集、使用或共享任何用户数据。汉字助手扩展程序不收集、存储或传输任何个人用户数据。所有的汉字分析和信息展示都在用户的浏览器本地进行,不涉及任何外部服务器或第三方。我们尊重用户隐私,确保用户可以安全、私密地使用我们的扩展程序。"
+    }
+  }
