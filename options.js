@@ -45,12 +45,24 @@ function loadSavedOptions() {
     rate: 1,
     pitch: 1
   }, function(items) {
-    document.getElementById('chinese-voice-selector').value = items.selectedChineseVoice;
-    document.getElementById('english-voice-selector').value = items.selectedEnglishVoice;
-    document.getElementById('rate').value = items.rate;
-    document.getElementById('pitch').value = items.pitch;
-    const pitch_value = document.getElementById('pitch-value');
-    pitch_value.textContent = items.pitch;
+    const elements = {
+      'chinese-voice-selector': items.selectedChineseVoice,
+      'english-voice-selector': items.selectedEnglishVoice,
+      'rate': items.rate,
+      'pitch': items.pitch,
+      'pitch-value': items.pitch
+    };
+
+    for (const [id, value] of Object.entries(elements)) {
+      const element = document.getElementById(id);
+      if (element) {
+        if (element.tagName === 'SELECT' || element.type === 'range') {
+          element.value = value;
+        } else {
+          element.textContent = value;
+        }
+      }
+    }
   });
 }
 
@@ -123,15 +135,8 @@ function initializePage() {
 
   document.title = chrome.i18n.getMessage("settings");
 
-  // 为启用/禁用扩展开关添加事件监听器
-  document.getElementById('enable-extension').addEventListener('change', toggleExtension);
 }
 
-function toggleExtension() {
-  // 这里添加启用/禁用扩展的逻辑
-  console.log("Extension toggled");
-  // 实际实现可能需要与背景脚本通信来启用/禁用扩展功能
-}
 
 
 // 确保 DOM 完全加载后再执行初始化
@@ -145,7 +150,6 @@ if (document.readyState === 'loading') {
 document.getElementById('save').textContent = getMessage("saveSettings");
 document.querySelector('h1').textContent = getMessage("settings");
 document.querySelector('h2').textContent = getMessage("aboutHanziHelper");
-document.querySelector('.switch-container span').textContent = getMessage("enableExtension");
 
 // 更新其他文本元素
 // ...
@@ -186,3 +190,32 @@ function setI18nText(id, messageKey) {
   }
 }
 
+function updateUIText() {
+  const elements = {
+    'save': "saveSettings",
+    'page-title': "settings",
+    'basicSettings': "basicSettings",
+    'about': "about",
+    'voiceSettings': "voiceSettings"
+  };
+
+  for (const [id, messageKey] of Object.entries(elements)) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.textContent = getMessage(messageKey);
+    }
+  }
+
+  const h2Elements = document.querySelectorAll('h2');
+  h2Elements.forEach(h2 => {
+    const key = h2.getAttribute('data-i18n');
+    if (key) {
+      h2.textContent = getMessage(key);
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  updateUIText();
+  // Other initialization code...
+});

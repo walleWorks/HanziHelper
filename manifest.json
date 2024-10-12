@@ -10,7 +10,7 @@
         "48": "icon48.png",
         "128": "icon128.png"
     },
-    "permissions": ["activeTab", "scripting", "storage", "i18n"],
+    "permissions": ["activeTab", "scripting", "storage"],
     "options_page": "options.html",
     "action": {
       "default_popup": "popup.html"
