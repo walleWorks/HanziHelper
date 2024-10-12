@@ -15,7 +15,17 @@
     "action": {
       "default_popup": "popup.html"
     },
-    "background": {
-      "service_worker": "background.js"
-    }
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["hanzi-writer.min.js","content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["word.json","styles.css"],
+        "matches": ["<all_urls>"]
+      }
+    ]
   }
